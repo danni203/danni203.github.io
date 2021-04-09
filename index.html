@@ -23,7 +23,7 @@
         border: 10px #333 solid;
       }
 
-      #videoElement {
+      #videoElement,#camera--sensor {
         width: 500px;
         height: 375px;
         background-color: #666;
@@ -50,11 +50,13 @@
 
   <body>
     <h1>Vitals Scanner Web Browser</h1>
-    <div id="container">
+    <!--div id="container"-->
       <!--video autoplay="true" id="videoElement"></video-->
       <!-- Camera view -->
+    <!-- Camera sensor -->
+		    <canvas id="camera--sensor"></canvas>
     <video id="videoElement" autoplay playsinline></video>
-    </div>
+    <!--/div-->
     <br>
     <button id="stop">Stop Video</button>
     <br>
